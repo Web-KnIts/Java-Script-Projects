@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    /* font-family: "Grape Nuts", cursive;
+
+    font-family: "Poppins", sans-serif;
+
+    font-family: "Roboto", sans-serif; */
+
+
+      
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    min-height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center; */
+     background-color: #3C0753;
+}
+#to_do_Container{
+    width: 100%;
+    max-width: 540px;
+    margin: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px;
+} 
+#heading-one{
+    color: white;
+    font-family: "Grape Nuts", cursive;
+}
+#heading-two{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: red;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+#heading-two img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#input_part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edeef0;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+#value{
+    flex:1;
+    border: none;
+    outline: none;
+    padding:10px;
+    font-weight: 24px;
+    background: transparent;
+}
+#add{
+    border:none;
+    outline:none;
+    padding:12px 50px;
+    background: #ff5945;
+    font-size: 16px;
+    border-radius: 0px 40px 40px 0px;
+    cursor: pointer;
+}
+.list_Container{
+    margin-left: 40px;
+}
+.list_Container ul li{
+width: 100%;
+list-style: none;
+font-size: 17px;
+font-family: "Roboto", sans-serif; 
+padding: 12px 8px 12px 8px;
+user-select: none;
+display: flex;
+justify-content: space-between;
+}
+#list li span{
+    margin: 3px;
+}
+span img{
+    width: 24px;
+    height: 24px;
+}
+span:hover{
+    scale: 1.2;
+}
+.list_Container ul li::before{
+content: '';
+position: absolute;
+height: 25px;
+width: 25px;
+border-radius: 50%;
+background-image: url(img/unchk.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+left: 38%;
+}
+.list_Container ul li.checked::before{
+    color:red;
+    background-image: url(img/chk.jpg);
+}
